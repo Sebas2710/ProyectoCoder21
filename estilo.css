@@ -1,0 +1,539 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.grilla{
+    display: grid;
+    
+}
+.container{
+    display: grid;
+}
+.grilla2{
+    display: grid;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+li{
+    color: white;
+    font-size: 20px;
+}
+li a:hover{
+        background: chocolate;
+    }
+nav{
+    background-color: black;
+    width: 100%;
+}
+p{
+    padding: 20px;
+    width: auto;
+    margin: auto;
+    max-width: 700px;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+    color: tomato;
+    align-content: center;
+    justify-content: space-evenly;
+}
+h2{
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    font-weight: bolder;
+    max-width: 700px;
+    font-size: 30px;
+    align-content: center;
+    justify-content: space-evenly;
+    color: tomato;
+}
+footer{
+    background-color: black;
+    font-style: normal;
+    color: white;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+   .textoFooter{
+       color: white;
+       width: 100%;
+       align-content: center;
+       justify-content: space-evenly;
+   }
+@media only screen and (max-width:767px){
+    .grilla{
+        height: 1900px;
+        max-width: 90%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 35% 35% 10%;
+        grid-template-areas: "nav"
+                            "mainLogo"
+                            "mainDescription"
+                            "footer";
+    }
+    .padre{
+        display: grid;
+        width: 100%;
+                   }
+    .logo{
+        display: grid;
+        grid-area: mainLogo;
+        width: 80%;
+        justify-content: start;
+          }
+    .imgLog{
+        align-self: stretch;
+    }
+    .bienvenida{
+        display: grid;
+        grid-area: mainDescription;
+        width: 80%;
+    }
+     .grilla2{
+        display: flex;
+        height: 1900px;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 70% 10%;
+        grid-template-areas:    "nav"
+                                "main"
+                                "footer";
+    }
+    .container{
+        display: grid;
+        height: 1200px;
+        width: 100%;
+        margin: auto;  
+        grid-template-columns: 100%;
+        grid-template-rows: 31% 23% 23% 23%;
+        grid-template-areas: "banner"
+                             "notaUno" 
+                             "notaDos"
+                             "notaTres"; 
+    }
+    nav{
+        grid-area: nav;
+        background-color: black;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    footer{
+        grid-area: footer;
+    }
+    .hijoUno{
+            grid-area: banner;
+            justify-content: stretch;
+            align-self: center;
+            justify-self: center;
+            width: 80%;
+            height: auto;
+              }
+    .hijoDos{
+        grid-area: notaUno;
+        justify-content: stretch;
+            align-self: center;
+            justify-self: center;
+            width: 70%;
+            height: auto
+    }
+    .hijoTres{
+        grid-area: notaDos;
+        justify-content: stretch;
+            align-self: center;
+            justify-self: center;
+            width: 70%;
+            height: auto
+    }
+    .hijoCuatro{
+        grid-area: notaTres;
+        justify-content: stretch;
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        height: auto
+    }
+    .banner{
+        width: 80%;
+        grid-area: banner;
+        align-content: center;
+        justify-content: stretch; 
+    }
+    .container > div{
+        display: grid; /*eliminado display:block*/
+        padding: 20px;
+        font-size: 80%;
+        align-self: center;
+    }
+    .container{
+               transition: all 100ms;
+           }
+    .container :hover{
+        transform: scale(1.15);
+    }
+    .banner{
+        width: 80%;
+        height: auto;
+        justify-self: center;
+    }
+    .titulosServicios{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: blue;
+        font-size: 100%;  
+    }
+    .textoServicios{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: black;
+        font-size: 90%;
+        width: 50%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    .review{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .historiaClinica{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .turnos{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+}
+@media only screen and (min-width:768px){
+    .grilla{
+        height: 1900px;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 70% 15%;
+        grid-template-areas: "nav"
+                            "main"
+                            "footer";
+    }
+    .padre{
+        display: flex;
+        width: 100%;
+            }
+    .grilla2{
+        height: 1500px;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 70% 15%;
+        grid-template-areas: "nav"
+                            "main"
+                            "footer";
+    }
+    nav{
+        grid-area: nav;
+        background-color: black;
+    }
+    ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .logo{
+        display: grid;
+        grid-area: mainLogo;
+        width: 100%;
+    }
+
+     footer{
+        grid-area: footer;
+    }
+    .bienvenida{
+        display: grid;
+        grid-area: mainDescription;
+        width: 100%;
+    }
+    .hijoUno{
+        display: grid;
+        width: 90%;
+        justify-content: stretch;
+        grid-area: banner;
+    }
+    .hijoDos{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota1;
+    }
+    .hijoTres{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota2;
+    }
+    .hijoCuatro{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota3;
+    }
+    .banner{
+        width: 80%;
+        grid-area: banner;
+        align-content: center;
+        justify-content: stretch; 
+    }
+    .container{
+     
+        display: grid;
+        
+        height: 1200px;
+        width: 100%;
+        margin: auto;  
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "banner banner banner"
+                             "notaUno notaDos notaTres"    ; 
+    }
+    
+    .container > div{
+        display: grid; /*eliminado display:block*/
+        padding: 20px;
+        font-size: 80%;
+        align-self: center;
+    }
+   
+    .hijoUno{
+        grid-area: banner;
+        align-self: center;
+        justify-self: center;
+        width: 80%;
+        height: auto;
+          }
+    .hijoDos{
+        grid-area: notaUno;
+        align-self: center;
+        justify-self: center;         
+        }
+    .hijoTres{
+                grid-area: notaDos;
+                align-self: center;
+    justify-self: center;
+    }
+    .hijoCuatro{
+    grid-area: notaTres;
+    align-self: center;
+    justify-self: center;
+      
+    }
+    .container{
+        
+        transition: all 100ms;
+        /*position: relative;*/
+    }
+    .container :hover{
+        transform: scale(1.15);
+    }
+    .banner{
+        width: 80%;
+        height: auto;
+        justify-self: center;
+    }
+    .titulosServicios{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: blue;
+        font-size: 100%;  
+    }
+    .textoServicios{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: black;
+        font-size: 90%;
+        width: 50%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    .review{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .historiaClinica{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .turnos{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    }
+@media only screen and (min-width:982px){
+    .grilla{
+        height: 1400px;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: "nav nav"
+                            "main1 main2"
+                            "footer footer";
+    }
+    .padre{
+        display: flex;
+        width: 100%;
+            }
+    .grilla2{
+        height: 1500px;
+        grid-template-columns: 100%
+        grid-template-rows:  10% 80% 10%;
+        grid-template-areas: "nav"
+                             "main"
+                             "footer"     ;
+    }
+    .logo{
+        width: 50%;
+        justify-items: center;}
+
+    .bienvenida{
+        width: 50%;
+        justify-items: center;
+    }
+    nav{
+        grid-area: nav;
+        background-color: black;
+    }
+    ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .hijoUno{
+        display: grid;
+        width: 90%;
+        justify-content: stretch;
+        grid-area: banner;
+    }
+    .hijoDos{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota1;
+    }
+    .hijoTres{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota2;
+    }
+    .hijoCuatro{
+        display: grid;
+        width: 90%;
+        align-content: stretch;
+        grid-area: nota3;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+ 
+    .banner{
+        width: 80%;
+        grid-area: banner;
+        align-content: center;
+        justify-content: stretch; 
+    }
+    .container{
+     
+        display: grid;
+        
+        height: 1200px;
+        width: 100%;
+        margin: auto;  
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "banner banner banner"
+                             "notaUno notaDos notaTres"    ; 
+    }
+    
+    .container > div{
+        display: grid; /*eliminado display:block*/
+        padding: 20px;
+        font-size: 80%;
+        align-self: center;
+    }
+   
+    .hijoUno{
+        grid-area: banner;
+        align-self: center;
+        justify-self: center;
+        width: 80%;
+        height: auto;
+          }
+    .hijoDos{
+        grid-area: notaUno;
+        align-self: center;
+        justify-self: center;         
+        }
+    .hijoTres{
+                grid-area: notaDos;
+                align-self: center;
+    justify-self: center;
+    }
+    .hijoCuatro{
+    grid-area: notaTres;
+    align-self: center;
+    justify-self: center;
+      
+    }
+    .container{
+        
+        transition: all 100ms;
+        /*position: relative;*/
+    }
+    .container :hover{
+        transform: scale(1.15);
+    }
+    .banner{
+        width: 80%;
+        height: auto;
+        justify-self: center;
+    }
+    .titulosServicios{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: blue;
+        font-size: 100%;  
+    }
+    .textoServicios{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: black;
+        font-size: 90%;
+        width: 50%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    .review{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .historiaClinica{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+    .turnos{
+        width: 20%;
+        height: auto;
+        justify-self: center;
+    }
+}

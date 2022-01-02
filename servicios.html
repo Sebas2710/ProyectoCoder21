@@ -4,57 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="logo16.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Servicios</title>
-
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <title>Index</title>
+     <!--CSS personal -->
+     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>  
-    <header></header>
-    <div class="grillaDos">
-<nav>
-        <ul> 
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a href="foro.html">FORO</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
-
-
-        </ul> </nav>
-    <main>
-        <div class="container">
-            <div class="hijoUno">
-               <img src="bannercentral.png" alt="banner" class="banner">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+              <img src="logo16.ico" alt="logo" width="30" height="24">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="foro.html">Foro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-            <div class="hijoDos">
-                <img src="reviews.png" alt="reviews" class="review">
-               <p class="titulosServicios">Reviews de médic@s</p>
-            <p class="textoServicios">Te invitamos a que antes de reservar un turno con un profesional puedas leer opiniones reales de pacientes. ¿Te animás a dejar tus opiniones?</p> </div>
-            <div class="hijoTres">
-               <img src="historiaclinica.png" alt="historiaClinica" class="historiaClinica"> 
-               <p class="titulosServicios">Historia clínica</p> 
-            <p class="textoServicios">La historia clínica es de los pacientes y no de un profesional o de una institución médica. Toda tu información a tu disposición.</p></div>
-            <div class="hijoCuatro">
-                <img src="turnos.png" alt="turnos" class="turnos"> 
-                <p class="titulosServicios">Turnos</p>
-            <p class="textoServicios">Agendá y reservá los turnos desde tu celular.</p></div>
-            
-        
-    
-
+          </nav>
+    </header>
+    <main class="container m-5 text-center">
+        <div class="row">
+            <div class="col">
+                <div class="horizontal card" style="width: auto;">
+                    <img src="bannercentral.png" class="card-img-top" alt="banner" class="img-fluid">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Unite a HealthApp</h5>
+                      <p class="card-text text-center">En pocos pasos podés unirte y ser parte de nuestra Comunidad</p>
+                          <!-- Button trigger modal -->
+    <button type="button"  class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Registrate
+    </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrarse en HealthApp</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                  <input type="email" placeholder="mail@prueba.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row my-4 text-center">
+            <div class="col md-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="reviews.png" class="card-img-top" alt="reviews" class="img-fluid" width="286px" height="170px" >
+                    <div class="card-body">
+                      <h5 class="card-title">Reviews</h5>
+                      <p class="card-text">Conocé y sumá experiencias sobre profesionales de la salud.</p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>    
+            </div>
+            <div class="col md-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="historiaclinica.png" class="card-img-top" alt="historiaClinica" class="img-fluid" width="286px" height="170px" >
+                    <div class="card-body">
+                      <h5 class="card-title">Historia clínica</h5>
+                      <p class="card-text">La historia clínica es del paciente. Toda tu información con vos.</p>
+                    </p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>    
+            </div>
+            <div class="col md-4 text-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="turnos.png" class="card-img-top" alt="turnos" class="img-fluid" width="286px" height="170px" >
+                    <div class="card-body">
+                      <h5 class="card-title">Turnos</h5>
+                      <p class="card-text">Agendá y reservá los turnos desde tu celular. Tu calendar siempre a mano.</p>
+                      <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+            </div>
     </main>    
-
-    <footer>
+    <footer class="text-center">
         <p class="textoFooter">2021 - Buenos Aires - Argentina</p>
     </footer>
     </div>
-    
-    </body>
-    </html>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     </body>
+    </html>

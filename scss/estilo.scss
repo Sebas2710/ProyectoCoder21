@@ -1,0 +1,27 @@
+@import "variables";
+
+div{
+    h1{
+        color: $textoColorPrimario;
+    }
+    h2{
+        color: $textoColorPrimario;
+    }
+    h5{
+        color: $textoColorPrimario;
+    }
+    p{
+        color: $textoColorSecundario;
+    }
+
+
+
+}
+
+li{
+    color: white;
+      font-size: 20px;
+      &:hover{
+          background: chocolate;
+      }
+}

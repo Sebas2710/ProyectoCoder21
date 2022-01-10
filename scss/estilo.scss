@@ -3,6 +3,7 @@
 div{
     h1{
         color: $textoColorPrimario;
+        font-weight: bolder;
     }
     h2{
         color: $textoColorPrimario;
@@ -12,6 +13,7 @@ div{
     }
     p{
         color: $textoColorSecundario;
+        font-style: italic;
     }
 
 

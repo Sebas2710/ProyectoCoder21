@@ -1,9 +1,6 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 div h1 {
-  color: tomato; }
+  color: tomato;
+  font-weight: bolder; }
 
 div h2 {
   color: tomato; }
@@ -12,47 +9,11 @@ div h5 {
   color: tomato; }
 
 div p {
-  color: black; }
+  color: black;
+  font-style: italic; }
 
 li {
   color: white;
   font-size: 20px; }
   li:hover {
     background: chocolate; }
-
-    p{
-      padding: 20px;
-      width: auto;
-      margin: auto;
-      max-width: 700px;
-      font-style: italic;
-      font-size: 20px;
-      line-height: 1.6;
-      }
-  h2{
-      width: auto;
-      margin: auto;
-      padding: 20px;
-      font-weight: bolder;
-      max-width: 700px;
-      font-size: 30px;
-  }
-  footer{
-    background-color: black;
-    font-style: normal;
-    color: white;
-    justify-content: space-evenly;
-    align-content: center;
-   }
-   .textoFooter{
-       color: white;
-       width: 100%;
-       align-content: center;
-       justify-content: space-evenly;
-   }
-   .container{
-    transition: all 100ms;
-}
-.container :hover{
-transform: scale(1.02);
-}

@@ -17,3 +17,14 @@ li {
   font-size: 20px; }
   li:hover {
     background: chocolate; }
+
+.card {
+  border: #a79d9d;
+  border-width: 2px;
+  border-style: outset; }
+
+.horizontalCard {
+  border: #a79d9d;
+  border-width: 2px;
+  border-style: outset;
+  border-style: inset; }

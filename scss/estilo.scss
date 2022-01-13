@@ -15,9 +15,6 @@ div{
         color: $textoColorSecundario;
         font-style: italic;
     }
-
-
-
 }
 
 li{
@@ -27,3 +24,28 @@ li{
           background: chocolate;
       }
 }
+@mixin estiloCards
+{   border: rgb(167, 157, 157) ;
+    border-width: 2px;
+    border-style: outset;
+    
+}
+.card {   @include estiloCards()
+    
+}
+.horizontalCard {   @include estiloCards()
+border-style: inset;
+}
+footer{
+    background-color: black;
+    font-style: normal;
+    color: white;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+   .textoFooter{
+       color: white;
+       width: 100%;
+       align-content: center;
+       justify-content: space-evenly;
+   }

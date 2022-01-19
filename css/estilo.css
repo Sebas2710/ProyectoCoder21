@@ -45,7 +45,7 @@ footer {
   align-content: center;
   justify-content: space-evenly; }
 
-.introForo {
+.introSection {
   display: flex;
   height: 100  px;
   max-width: 100%;
@@ -57,12 +57,19 @@ footer {
   justify-content: center;
   justify-self: center; }
 
-.titleForo {
+.titleSection {
   color: tomato;
   text-align: center;
   padding: 50px; }
 
-.textoForo {
+.textoSection {
   color: white;
   align-content: center;
   justify-content: space-evenly; }
+
+.container m-5 text-center {
+  display: flex; }
+
+form {
+  text-align: center;
+  padding: 50px; }

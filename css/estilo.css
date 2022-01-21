@@ -73,3 +73,9 @@ footer {
 form {
   text-align: center;
   padding: 50px; }
+
+.imagenMedico {
+  text-align: center;
+  padding: 50px;
+  width: 60%;
+  height: auto; }

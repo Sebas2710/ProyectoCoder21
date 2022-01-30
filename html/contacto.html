@@ -55,7 +55,28 @@
     
     <p class="textoSection">Completá el formulario y recibí de manera gratuita nuestro newsletter mensual, y un código del 50% off durante 3 meses.</p>
   </div>
-    <!--Formulario de contacto-->
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre</label>
+      <input type="text" placeholder="Ingrese su nombre y apellido" class="form-control" id="nombreUsuario" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" placeholder="mail@ejemplo.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie.</div>
+    </div>
+    <div class="mb-3">
+      <label for="tel1" class="form-label">Teléfono</label>
+      <input type="number" placeholder="1155667788" class="form-control" id="tel1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Suscribirme</button>
+  </form>
+    <!--Formulario de contacto
     <form action="login.py" method="post">
         <label for="NombreUsuario">Nombre</label>
         <input type="text" placeholder="Ingrese su nombre y apellido" id="NombreUsuario">
@@ -70,7 +91,7 @@
         <textarea name="" id="" cols="10" rows="5" placeholder="Deje datos adicionales"></textarea>
         <input type="submit" value="Enviar">
         <input type="reset" value="Resetear">
-    </form>
+    </form> -->
         </section>
         </main>
         <footer class="text-center">

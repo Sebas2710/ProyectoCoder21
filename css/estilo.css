@@ -1,6 +1,3 @@
-* {
-  margin: 0;
-padding: 0; }
 div h1 {
   color: tomato;
   font-weight: bolder; }
@@ -24,12 +21,16 @@ li {
 .card {
   border: #a79d9d;
   border-width: 2px;
-  border-style: outset; }
+  border-style: outset;
+  padding: 10px;
+  margin: 10px; }
 
 .horizontalCard {
   border: #a79d9d;
   border-width: 2px;
   border-style: outset;
+  padding: 10px;
+  margin: 10px;
   border-style: inset; }
 
 #accordionPanelsStayOpenExample {

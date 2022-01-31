@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 div h1 {
   color: tomato;
   font-weight: bolder; }
@@ -72,7 +76,9 @@ footer {
   justify-content: space-evenly; }
 
 .container m-5 text-center {
-  display: flex; }
+  display: flex;
+  padding: 0;
+  margin: 0; }
 
 form {
   text-align: center;
